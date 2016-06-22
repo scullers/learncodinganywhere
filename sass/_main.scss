@@ -1,0 +1,647 @@
+/* Add new styles to this file! */
+
+/******************************************************************************
+    LAYOUTS
+******************************************************************************/
+
+
+
+body {
+    max-width: 98.75%;
+    padding-top: 115px;
+}
+
+
+/******************************************************************************
+    USEFUL CLASSES - Use these on any page
+******************************************************************************/
+
+.navText {
+    padding: 1em;
+}
+
+.footer {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*add this class to the first h1 in a page to set space for the nav bar across most devices/browsers*/
+.page-header {
+    padding-top: 1.1em;
+}
+
+
+.fadeIn {
+    opacity: 1;
+}
+
+.clickForContactForm{
+
+    transition:all .2s;
+    -moz-transition:all .2s; /* FIREFOX */
+    -webkit-transition:all .2s; /* SAFARI and CHROME */
+    -o-transition:all .2s; /* OPERA */
+
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+}
+.clickForContactForm:hover{
+
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+
+/******************************************************************************
+    INDEX - OVERVIEW STYLES
+******************************************************************************/
+.overview-content h2 a {
+    color: #004271;
+    text-decoration: none;
+}
+.overview-content p, #overview-header {
+    transition:all .8s;
+    -moz-transition:all .8s; /* FIREFOX */
+    -webkit-transition:all .8s; /* SAFARI and CHROME */
+    -o-transition:all .8s; /* OPERA */
+
+    transform: scale(0.950);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+}
+.overview-content p:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+#overview-header:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+
+/******************************************************************************
+    INDEX - TopList
+******************************************************************************/
+
+#topButton{
+    margin-left: 0 !important;
+    font-size: .9em;
+}
+
+#topList {
+    text-align: left !important;
+    margin-left: 10px;
+}
+
+
+#topList h2 {
+    font-size: 1em;
+}
+
+#topList a.btn-lg {
+    margin: 0 !important;
+}
+
+/******************************************************************************
+    INDEX - TESTIMONIALS SLIDESHOW STYLES
+******************************************************************************/
+
+.testimonials-slider {
+
+    overflow:hidden;
+    position: relative;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-slider .btn-testimonial-read-more {
+    position: absolute;
+    bottom: 0;
+}
+
+.testimonials-slider .testimonials-text {
+
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.2em;
+    transition:all .8s;
+    -moz-transition:all .8s; /* FIREFOX */
+    -webkit-transition:all .8s; /* SAFARI and CHROME */
+    -o-transition:all .8s; /* OPERA */
+
+    transform: scale(0.80);
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+}
+
+.testimonials-slider .testimonials-text:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+
+/******************************************************************************
+    INDEX - CAROUSEL
+******************************************************************************/
+
+
+
+#carousel-home {
+    display: block;
+    //margin: 0; /*WAS 10PX AUTO*/
+    //width: 100%;
+    //height: 150%;
+    
+}
+//
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255,255,255,1);
+    text-align: center;
+    top: auto;
+    bottom: 1em;
+}
+
+.carousel-caption h1 {
+    font-size: .9em;
+}
+.carousel-caption p {
+    font-size: .8em;
+}
+//
+.carousel-indicators li { visibility: hidden; }
+
+/******************************************************************************
+    CONTACT FORM
+    TODO: DRY it out. Pulled from style.scss on 6.16.16
+******************************************************************************/
+
+@media only screen and (max-width: 656px) {
+    #contactForm  #callInstructions {
+        display: block;
+        visibility: visible;
+    }
+    #contactForm  #tourInstructions {
+        display: block;
+        visibility: visible;
+    }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    #contactForm #hidePhone {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #hideTour {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #origPhone {
+        display: none;
+        visibility: hidden;
+    }
+    #contactForm #origTour {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    #contactForm #hidePhone {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #hideTour {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #origPhone {
+        display: none;
+        visibility: hidden;
+    }
+    #contactForm #origTour {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .tales {
+        width: 100%;
+    }
+
+    #contactForm #hidePhone {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #hideTour {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #origPhone {
+        display: none;
+        visibility: hidden;
+    }
+    #contactForm #origTour {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+    #contactForm #hidePhone {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #hideTour {
+        display: block;
+        visibility: visible;
+        font-size: 60%;
+    }
+    #contactForm #origPhone {
+        display: none;
+        visibility: hidden;
+    }
+    #contactForm #origTour {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+/******************************************************************************
+    CONTACT INFO PAGE_SPECIFIC CSS
+    TODO: DRY it out. Pulled from style.scss on 6.16.16
+******************************************************************************/
+
+#contactForm {
+    margin-top: 10px;
+}
+
+#contactForm  #required {
+    text-align: left;
+    font-size: 70%;
+    letter-spacing: 1px;
+    margin-left: 8% !important;
+    margin-bottom: -10px !important;
+}
+
+#contactForm  #Name {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-top: 10px !important;
+    margin-bottom: 8px !important;
+}
+
+#contactForm  #Email {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    margin-bottom: 8px !important;
+
+}
+
+#contactForm  #Ad {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+
+}
+
+#contactForm  #Phone {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-bottom: 8px !important;
+}
+
+#contactForm  #AddPhone {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-bottom: 8px !important;
+}
+
+#contactForm  #Address {
+    height: 75px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-bottom: 0;
+    /*margin-top: 10px !important;*/
+}
+
+#contactForm  #studyDropDown {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-bottom: 8px !important;
+
+}
+
+#contactForm  #Message {
+    height: 75px !important;
+    font-size: 60% !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-bottom: 0 !important;
+
+}
+
+#contactForm  #hearDropDown {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-bottom: 8px !important;
+
+}
+
+#contactForm  #otherchoice {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    /*font-size: 14px;*/
+    font-weight: bold;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    padding: 10px !important;
+    margin-bottom: 8px !important;
+}
+
+#contactForm  #callInstructions {
+    display: none;
+    visibility: hidden;
+    text-align: left;
+    font-size: 65%;
+    letter-spacing: 1px;
+    margin-left: 6% !important;
+    margin-bottom: -10px !important;
+}
+
+#contactForm #datetimepicker1 {
+    height: 50px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    margin-bottom: 8px !important;
+}
+#contactForm #hidePhone {
+    display: none;
+    visibility: hidden;
+}
+#contactForm #phone_input1 {
+    height: 50px !important;
+    letter-spacing: 1px !important;
+}
+
+#contactForm #phone_input2 {
+    height: 50px !important;
+    letter-spacing: 1px !important;
+}
+#contactForm .btn-group {
+    width: 60px !important;
+    padding: 0;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
+#contactForm #noButton1 {
+    font-size: 60% !important;
+    letter-spacing: 1px !important;
+    font-weight: bold;
+    /*float: right;*/
+    padding: 3px;
+}
+
+#contactForm #noButton2 {
+    font-size: 60% !important;
+    letter-spacing: 1px !important;
+    font-weight: bold;
+    /*float: right;*/
+    padding: 3px;
+}
+
+
+#contactForm #hideTour {
+    display: none;
+    visibility: hidden;
+}
+#contactForm #tour_input1 {
+    height: 50px !important;
+    letter-spacing: 1px !important;
+}
+
+#contactForm #tour_input2 {
+    height: 50px !important;
+    letter-spacing: 1px !important;
+}
+#contactForm  #tourInstructions {
+    display: none;
+    visibility: hidden;
+    text-align: left;
+    font-size: 65%;
+    letter-spacing: 1px;
+    margin-left: 6% !important;
+    margin-bottom: -10px !important;
+}
+
+#contactForm #datetimepicker2 {
+    height: 50px !important;
+    font-weight: normal;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    /*margin-top: 10px !important;*/
+}
+
+#contactForm  #submitButton {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    padding: 10px !important;
+    margin-top: 10px !important;
+    font-weight: bold;
+}
+
+#contactInfo [class*="fa"] {
+    margin-top: 30px;
+}
+#contactInfo p {
+    margin-bottom: 30px;
+}
+
+#contactInfo p .bottom{
+    margin-top: 30px;
+}
+#contactInfo {
+    margin-top: 10px;
+}
+
+/* END CONTACT INFO PAGE_SPECIFIC CSS */
+
+/******************************************************************************
+     employers page css
+     TODO: DRY it out. Pulled from style.scss on 6.16.16
+******************************************************************************/
+
+.emp-container {
+    line-height: 0;
+}
+
+.emp-row {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.42857143;
+}
+
+.emp-row-left {
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+
+.emp-row-right {
+    width: 50%;
+    height: 600px;
+    float: right;
+}
+
+#emp-large-image {
+    width: 100%;
+    height: 600px;
+}
+
+.emp-logo-container {
+    margin-top: 20px;
+}
+
+.emp-logo-row {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#logo-row-text {
+    margin-bottom: 50px;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+/* end employers page css */
+/******************************************************************************
+    ?HTMLPAGE? - ?MORESTYLES?
+******************************************************************************/
+
+/******************************************************************************
+    ?HTMLPAGE? - ?MORESTYLES?
+******************************************************************************/
+
+/******************************************************************************
+    ?HTMLPAGE? - ?MORESTYLES?
+******************************************************************************/
