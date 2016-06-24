@@ -208,11 +208,97 @@
         </div>
     </div>
 
+
+    <div id="myModalPopUpContact" class="modal fade" role="dialog">
+        <!-- modal dialog box -->
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body-contact row" id="contactForm">
+                    <form method="POST" action="http://plus.allforms.mailjol.net/u/b1749119.php">
+
+					<div class="questions form-group">
+						<div id="selectBox"><input id="Name" type="text" name="Name" placeholder="ENTER YOUR NAME" class="sixty" required />
+						</div>
+					</div>
+					<div class="questions form-group">
+						<div id="selectBox"><input id="Email" type="text" name="Email" placeholder="  ENTER YOUR EMAIL: you@yourdomain.com" class="sixty" required />
+						</div>
+					</div>
+					<div class="questions form-group">
+						<div id="selectBox"><input id="Phone" type="text" name="Phone" placeholder="ENTER YOUR PHONE NUMBER" class="sixty" required />
+						</div>
+					</div>
+					
+					<div class="questions form-group">
+						<select id="studyDropDown" name="studyDropDown" required>
+							<option value="default">HOW WILL YOU STUDY THE PROGRAM?</option>
+							<option value="online">ONLINE STUDY (REMOTE, FROM HOME, INTERNATIONAL)</option>
+							<option value="in_person">IN-PERSON STUDY (STUDY AT OUR SCHOOL IN PORTLAND)</option>
+							<option value="not_studying">I AM NOT CONTACTING YOU TO STUDY THE PROGRAM</option>
+						</select>
+					</div>
+
+					<div class="questions form-group">
+						<select id="hearDropDown" name="hearDropDown" required>
+							<option value="default">HOW DID YOU HEAR ABOUT US?</option>
+							<option value="radio">RADIO</option>
+							<option value="online_search">ONLINE SEARCH</option>
+							<option value="google">GOOGLE</option>
+							<option value="friend">FRIEND</option>
+							<option value="student">STUDENT</option>
+							<option value="graduate">GRADUATE</option>
+							<option value="course_report">COURSE REPORT</option>
+							<option value="switchup">SWITCHUP</option>
+							<option value="bootcamps.in">BOOTCAMPS.IN</option>
+							<option value="other">OTHER</option>
+						</select>
+					</div>
+					<p class="ScheduleTC">Schedule a call below</p>
+					<div class="questions form-group">
+						<div class='input-group date' id='datetimepicker1' required>
+							<div id="hidePhone"><input type='text' name="datetimepicker1[]" class="form-control" name="phonecall" placeholder="SCHEDULE CALL: 10am -4:30pm PST)" id="phone_input1"/></div>
+							<div id="origPhone"><input type='text' name="datetimepicker1[]" class="form-control" name="phonecall" placeholder="SCHEDULE A PHONE CALL (10am -4:30pm PST)" id="phone_input2"/></div>
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							<span class="input-group-addon">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default" id="noButton1">NOT NOW
+									</button>
+								</div>
+							</span>
+						</div>
+					</div>
+					<p class="ScheduleTC">Schedule a tour below</p>
+					<div class="questions form-group">
+						<div class='input-group date' id='datetimepicker2' required>
+							<div id="hideTour"><input type='text' name="datetimepicker2[]" class="form-control" name="tour" placeholder="SCHEDULE TOUR: 10am-4:30pm PST)" id="tour_input1"/></div>
+							<div id="origTour"><input type='text' name="datetimepicker2[]" class="form-control" name="tour" placeholder="SCHEDULE A TOUR (10am -4:30pm PST)" id="tour_input2"/></div>
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							<span class="input-group-addon">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default"  id="noButton2">NOT NOW
+									</button>
+								</div>
+							</span>
+						</div>
+					</div>
+					<div class="text-center"><button type="submit" id="submitButton" class="btn btn-default">SUBMIT</button>
+					</div>
+				</form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--  Site footer  -->
     <footer class="footer">         
         <div class="row">
             <ul class="footer_nav">
-                <li><a href="the-tech-academy.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="about-the-tech-academy.html">About</a></li>
                 <li><a href="tour-the-tech-academy.html">Digital Tour</a></li>
                 <li><a href="answers-to-frequently-asked-questions-the-tech-academy.html">FAQs</a></li>
@@ -259,125 +345,29 @@
         </div>
         
     </footer>
-    </div> <!-- /container -->
+<span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+<meta itemprop="name" content="Every day"></span></span>
+<meta itemprop="url" content="http://learncodinganywhere.com/"></div>
 
-    </div> <!-- /container -->
-    <!--<div id="myModalPopUp" class="modal fade" role="dialog"> &lt;!&ndash; modal dialog box &ndash;&gt;-->
-	    <!--<div class="modal-dialog">-->
-		    <!--&lt;!&ndash; Modal content&ndash;&gt;-->
-		    <!--<div class="modal-content">-->
-			    <!--<div class="modal-header">-->
-				    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-				    <!--<h3 class="modal-title">Hi there!</h3>-->
-			    <!--</div>-->
-			    <!--<div class="modal-body">-->
-				    <!--<p>Would you like to learn more about The Tech Academy?</p>-->
-			    <!--</div>-->
-			    <!--<div class="modal-footer">-->
-                    <!--<a class="btn modal-button-yes" href="contact.html">Yes</a>-->
-                    <!--<a class="btn" data-dismiss="modal">No</a>-->
-			    <!--</div>-->
-		    <!--</div>-->
-	    <!--</div>-->
-    <!--</div>-->
-	<!---->
-    <div id="myModalPopUpContact" class="modal fade" role="dialog">
-        <!-- modal dialog box -->
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-body-contact" id="contactForm">
-                     <form method="POST" action="http://plus.allforms.mailjol.net/u/b1749119.php">
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.EUHM0okOSao.O/m=auth/exm=page/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOtX4SuyVD7gCm8N-17I91Nqq-HDQ/t=zcms/cb=gapi.loaded_1" async=""></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.EUHM0okOSao.O/m=page/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOtX4SuyVD7gCm8N-17I91Nqq-HDQ/t=zcms/cb=gapi.loaded_0" async=""></script><script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true"></script>
+<script type="text/javascript"></script><iframe name="oauth2relay823781193" id="oauth2relay823781193" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Flearncodinganywhere.com#rpctoken=294239902&forcesecure=1" tabindex="-1" class="indexIframe"></iframe>
 
-					<div class="questions form-group">
-						<div id="selectBox"><input id="Name" type="text" name="Name" placeholder="ENTER YOUR NAME" class="sixty" required />
-						</div>
-					</div>
-					<div class="questions form-group">
-						<div id="selectBox"><input id="Email" type="text" name="Email" placeholder="  ENTER YOUR EMAIL: you@yourdomain.com" class="sixty" required />
-						</div>
-					</div>
-					<div class="questions form-group">
-						<div id="selectBox"><input id="Phone" type="text" name="Phone" placeholder="ENTER YOUR PHONE NUMBER" class="sixty" required />
-						</div>
-					</div>
-					
-					<div class="questions form-group">
-						<select id="studyDropDown" name="studyDropDown" required>
-							<option value="default">HOW WILL YOU STUDY THE PROGRAM?</option>
-							<option value="online">ONLINE STUDY (REMOTE, FROM HOME, INTERNATIONAL)</option>
-							<option value="in_person">IN-PERSON STUDY (STUDY AT OUR SCHOOL IN PORTLAND)</option>
-							<option value="not_studying">I AM NOT CONTACTING YOU TO STUDY THE PROGRAM</option>
-						</select>
-					</div>
-
-					<div class="questions form-group">
-						<select id="hearDropDown" name="hearDropDown" required>
-							<option value="default">HOW DID YOU HEAR ABOUT US?</option>
-							<option value="radio">RADIO</option>
-							<option value="online_search">ONLINE SEARCH</option>
-							<option value="google">GOOGLE</option>
-							<option value="friend">FRIEND</option>
-							<option value="student">STUDENT</option>
-							<option value="graduate">GRADUATE</option>
-							<option value="course_report">COURSE REPORT</option>
-							<option value="switchup">SWITCHUP</option>
-							<option value="bootcamps.in">BOOTCAMPS.IN</option>
-							<option value="other">OTHER</option>
-						</select>
-					</div>
-					<div class="questions form-group">
-						<div class='input-group date' id='datetimepicker1' required>
-							<div id="hidePhone"><input type='text' name="datetimepicker1[]" class="form-control" name="phonecall" placeholder="SCHEDULE CALL: 10am -4:30pm PST)" id="phone_input1"/></div>
-							<div id="origPhone"><input type='text' name="datetimepicker1[]" class="form-control" name="phonecall" placeholder="SCHEDULE A PHONE CALL (10am -4:30pm PST)" id="phone_input2"/></div>
-							<span class="input-group-addon">
-								<span class="glyphicon glyphicon-calendar"></span>
-								</span>
-							<span class="input-group-addon">
-								<div class="btn-group">
-									<button type="button" class="btn btn-default" id="noButton1">NOT NOW
-									</button>
-								</div>
-							</span>
-						</div>
-					</div>
-					<div class="questions form-group">
-						<div class='input-group date' id='datetimepicker2' required>
-							<div id="hideTour"><input type='text' name="datetimepicker2[]" class="form-control" name="tour" placeholder="SCHEDULE TOUR: 10am-4:30pm PST)" id="tour_input1"/></div>
-							<div id="origTour"><input type='text' name="datetimepicker2[]" class="form-control" name="tour" placeholder="SCHEDULE A TOUR (10am -4:30pm PST)" id="tour_input2"/></div>
-							<span class="input-group-addon">
-								<span class="glyphicon glyphicon-calendar"></span>
-								</span>
-							<span class="input-group-addon">
-								<div class="btn-group">
-									<button type="button" class="btn btn-default"  id="noButton2">NOT NOW
-									</button>
-								</div>
-							</span>
-						</div>
-					</div>
-					<div class="text-center"><button type="submit" id="submitButton" class="btn btn-default">SUBMIT</button>
-					</div>
-				</form>
-                </div>
-            </div>
-        </div>
-    </div>
-	
-	<!-- Start Alexa Certify Javascript -->
+<!-- Start Alexa Certify Javascript -->
 <script type="text/javascript">
 _atrk_opts = { atrk_acct:"jT90m1a8FRh2cN", domain:"learncodinganywhere.com",dynamic: true};
 (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
 </script>
 <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=jT90m1a8FRh2cN" class="noscript" height="1" width="1" alt="" /></noscript>
-<!-- End Alexa Certify Javascript -->
+<!-- End Alexa Certify Javascript -->  
 
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/npm.js"></script>
-	<script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/npm.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
 
-	<script src="js/main.js" type="text/javascript"></script>
-	<script src="js/testimonials.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	<!--<script src="js/contact.js" type="text/javascript"></script>-->
 </body>
 </html>

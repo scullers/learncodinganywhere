@@ -1459,6 +1459,16 @@ blockquote {
   /*Dallin*/
   font-size: 55%; }
 
+.ScheduleTC {
+  font-size: 60%;
+  text-align: left;
+  margin-left: 7%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  height: 20%;
+  font-weight: bold; }
+
 .MessagePopUp {
   /*Dallin*/
   text-align: left; }
