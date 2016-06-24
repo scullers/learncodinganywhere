@@ -412,6 +412,27 @@ body {
   -o-transform: scale(1);
   -ms-transform: scale(1); }
 
+.clickForContactForm2 {
+  transition: all .2s;
+  -moz-transition: all .2s;
+  /* FIREFOX */
+  -webkit-transition: all .2s;
+  /* SAFARI and CHROME */
+  -o-transition: all .2s;
+  /* OPERA */
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  -ms-transform: scale(0.98); }
+
+.clickForContactForm2:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1); }
+
 /******************************************************************************
     INDEX - OVERVIEW STYLES
 ******************************************************************************/
@@ -962,9 +983,9 @@ h2, h4 {
 .masthead {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.clickForContactForm {
-  color: #337ab7; }
-
+/*.clickForContactForm{
+    color: rgb(51, 122, 183);
+}*/
 #rights {
   color: white !important; }
 
@@ -1462,7 +1483,7 @@ blockquote {
 .ScheduleTC {
   font-size: 60%;
   text-align: left;
-  margin-left: 7%;
+  margin-left: 10%;
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
