@@ -27,6 +27,7 @@ module.exports = function(grunt){
         }
     });
 
+	grunt.loadNpmTasks('grunt-serve');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
